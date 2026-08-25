@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KJ Contracting | Adelaide Construction & Renovations</title>
+  <meta name="description" content="KJ Contracting provides residential renovations, carpentry, painting, plastering, cladding, concrete and general contracting services in Adelaide and surrounding areas.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="KJ Contracting home">
+        <img src="kj-contracting-logo.png" alt="KJ Contracting logo">
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">ADELAIDE • SOUTH AUSTRALIA</p>
+          <h1>Built strong.<br>Built to last.</h1>
+          <p class="hero-copy">
+            Reliable construction, renovation and property improvement services
+            for homes and small commercial projects.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Request a Quote</a>
+            <a class="btn btn-secondary" href="#services">Our Services</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="kj-contracting-logo.png" alt="KJ Contracting">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">ABOUT US</p>
+          <h2>Practical building solutions with attention to detail.</h2>
+        </div>
+        <div>
+          <p>
+            KJ Contracting works across Adelaide and surrounding suburbs,
+            delivering renovation, carpentry, finishing and general construction
+            services with a strong focus on workmanship, communication and a tidy site.
+          </p>
+          <p>
+            Whether you need a small repair, room renovation, external work or help
+            coordinating a larger project, we aim to make the process straightforward.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="services">
+      <div class="container">
+        <p class="eyebrow">OUR SERVICES</p>
+        <h2>Construction and renovation services</h2>
+        <div class="cards">
+          <article class="card"><h3>Residential Renovations</h3><p>General renovation works, alterations, repairs and upgrades.</p></article>
+          <article class="card"><h3>Kitchen & Bathroom Works</h3><p>Renovation support, preparation, carpentry, finishing and coordination.</p></article>
+          <article class="card"><h3>Carpentry</h3><p>Framing, timber work, fit-outs, repairs and general carpentry tasks.</p></article>
+          <article class="card"><h3>Painting & Plastering</h3><p>Interior and exterior painting, patching, plaster repairs and preparation.</p></article>
+          <article class="card"><h3>External Cladding</h3><p>Cladding installation and exterior finishing for renovation projects.</p></article>
+          <article class="card"><h3>Concrete & Site Works</h3><p>Site preparation, formwork assistance, trenching, backfill and general works.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="eyebrow">PROJECTS</p>
+        <h2>Recent work</h2>
+        <p class="muted">Add your project photos here when you are ready.</p>
+        <div class="project-grid">
+          <div class="project-placeholder">Renovations</div>
+          <div class="project-placeholder">Carpentry</div>
+          <div class="project-placeholder">Cladding</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h2>Request a quote</h2>
+          <p>
+            Tell us about your project and we’ll get back to you.
+          </p>
+          <div class="contact-note">
+            <strong>Website:</strong> kjcontractinggroup.com.au<br>
+            <strong>Service area:</strong> Adelaide & surrounding suburbs, SA
+          </div>
+        </div>
+
+        <form class="quote-form" onsubmit="return submitForm(event)">
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email">
+          </label>
+          <label>
+            Suburb
+            <input type="text" name="suburb">
+          </label>
+          <label>
+            Project details
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send Enquiry</button>
+          <p class="form-note" id="form-note">
+            This starter form is not connected to email yet. We can connect it after the site is online.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="kj-contracting-logo.png" alt="KJ Contracting logo">
+      </div>
+      <div>
+        <strong>KJ Contracting</strong><br>
+        Adelaide, South Australia
+      </div>
+      <div class="copyright">© <span id="year"></span> KJ Contracting. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

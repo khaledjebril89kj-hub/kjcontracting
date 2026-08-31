@@ -47,3 +47,29 @@ function submitForm(event){
     'Thanks — the form layout works. We still need to connect it to your email before customers can send enquiries.';
   return false;
 }
+
+// Automatic service slider
+
+if (serviceSlider) {
+  setInterval(() => {
+    const card = serviceSlider.querySelector('.card');
+    if (!card) return;
+
+    const distance = card.offsetWidth + 24;
+    const nearEnd =
+      serviceSlider.scrollLeft + serviceSlider.clientWidth >=
+      serviceSlider.scrollWidth - 10;
+
+    if (nearEnd) {
+      serviceSlider.scrollTo({
+        left: 0,
+        behavior: 'smooth'
+      });
+    } else {
+      serviceSlider.scrollBy({
+        left: distance,
+        behavior: 'smooth'
+      });
+    }
+  }, 3500);
+}

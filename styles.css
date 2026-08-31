@@ -148,3 +148,32 @@ textarea{resize:vertical}
   }
 }
 
+/* Service Slider Arrows */
+
+.slider-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: 10px 0 5px;
+}
+
+.slider-arrow {
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: #f05a00;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.slider-arrow:hover {
+  background: #111111;
+  color: #ffffff;
+}

@@ -8,6 +8,34 @@ toggle.addEventListener('click', () => {
   const open = nav.classList.toggle('open');
   toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
 });
+// KJ Contracting Services Slider
+
+const serviceSlider = document.querySelector('#services .cards');
+const prevButton = document.querySelector('.slider-prev');
+const nextButton = document.querySelector('.slider-next');
+
+if (serviceSlider && prevButton && nextButton) {
+  const moveSlider = (direction) => {
+    const card = serviceSlider.querySelector('.card');
+    if (!card) return;
+
+    const distance = card.offsetWidth + 24;
+
+    serviceSlider.scrollBy({
+      left: direction * distance,
+      behavior: 'smooth'
+    });
+  };
+
+  nextButton.addEventListener('click', () => {
+    moveSlider(1);
+  });
+
+  prevButton.addEventListener('click', () => {
+    moveSlider(-1);
+  });
+}
+
 
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => nav.classList.remove('open'));

@@ -9,7 +9,7 @@
   --max:1180px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth}=
 body{
   margin:0;
   font-family:Arial,Helvetica,sans-serif;
@@ -97,3 +97,54 @@ textarea{resize:vertical}
   .footer-grid{grid-template-columns:1fr;text-align:left}
   .copyright{text-align:left}
 }
+/* KJ Contracting Services Slider */
+
+#services .cards {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 20px 5px 30px;
+  scrollbar-width: none;
+}
+
+#services .cards::-webkit-scrollbar {
+  display: none;
+}
+
+#services .card {
+  flex: 0 0 320px;
+  scroll-snap-align: center;
+  background: #ffffff;
+  color: #111111;
+  border-radius: 16px;
+  padding: 30px 24px;
+  min-height: 190px;
+  box-shadow: 8px 8px 22px rgba(0, 0, 0, 0.28);
+  border-top: 5px solid #f05a00;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 10px 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+#services .card h3 {
+  color: #f05a00;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+}
+
+#services .card p {
+  color: #252525;
+}
+
+@media (max-width: 700px) {
+  #services .card {
+    flex: 0 0 85%;
+  }
+}
+
